@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/blog_for_rwarou/static/css/main.e6c13ad2.css",
-    "main.js": "/blog_for_rwarou/static/js/main.3bb4542b.js",
+    "main.css": "/blog_for_rwarou/static/css/main.704a4203.css",
+    "main.js": "/blog_for_rwarou/static/js/main.69809063.js",
+    "static/media/logo.png": "/blog_for_rwarou/static/media/logo.d2a1c816b8b5475b4887.png",
     "index.html": "/blog_for_rwarou/index.html",
-    "main.e6c13ad2.css.map": "/blog_for_rwarou/static/css/main.e6c13ad2.css.map",
-    "main.3bb4542b.js.map": "/blog_for_rwarou/static/js/main.3bb4542b.js.map"
+    "main.704a4203.css.map": "/blog_for_rwarou/static/css/main.704a4203.css.map",
+    "main.69809063.js.map": "/blog_for_rwarou/static/js/main.69809063.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.3bb4542b.js"
+    "static/css/main.704a4203.css",
+    "static/js/main.69809063.js"
   ]
 }
