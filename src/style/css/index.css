@@ -39,7 +39,10 @@
 #root .pdf-wrap .pdf-item {
   display: inline-block;
   text-align: center;
-  border: 1px black solid;
+  margin: 40px 0;
+}
+#root .pdf-wrap .pdf-item-controller {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=index.css.map */

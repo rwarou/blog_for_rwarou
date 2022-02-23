@@ -59,7 +59,7 @@ $white: #EEEEEE;
     .pdf-item {
       display: inline-block;
       text-align: center;
-      border: 1px black solid;
+      margin: 40px 0;
       
       .react-pdf__Document {
 
@@ -70,6 +70,10 @@ $white: #EEEEEE;
           }
         }
       }
+    }
+
+    .pdf-item-controller {
+      padding: 10px;
     }
   }
 }

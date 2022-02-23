@@ -13,19 +13,17 @@ export function SinglePagePdfViewer({ file }) {
 
   return (
     <div className='pdf-item'>
-      {console.log("dddddd")}
       <Document
         file={file}
         options={{ workerSrc: "/pdf.worker.js" }}
         onLoadSuccess={documentLoadSuccess}>
         <Page scale={0.5} pageNumber={currentPage} />
       </Document>
-      <p>
+      <p className='pdf-item-controller'>
         <span onClick={() => currentPage > 1 ? setCurrentPage(currentPage - 1) : null}>
           &lt;
         </span>
-        <span>Page {currentPage} of {pages}</span>
-
+        <span>{currentPage} / {pages}</span>
         <span onClick={() => currentPage < pages ? setCurrentPage(currentPage + 1) : null}>
           &gt;
         </span>
