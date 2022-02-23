@@ -44,5 +44,9 @@
 #root .pdf-wrap .pdf-item-controller {
   padding: 10px;
 }
+#root .img-wrap img {
+  width: 150px;
+  padding: 10px;
+}
 
 /*# sourceMappingURL=index.css.map */
