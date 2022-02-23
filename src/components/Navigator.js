@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../assets/images/logo.png'
 
 export function Navigator() {
   return (
-    <ul>
-      <li><Link to="/">index</Link></li>
-      <li><Link to="/career">career</Link></li>
-      <li><Link to="/skills">skills</Link></li>
-      <li><Link to="/portfolio">portfolio</Link></li>
+    <ul className='nav'>
+      <Link to="/"><li><img src={logo} /></li></Link>
+      <Link to="/career"><li><p>career</p></li></Link>
+      <Link to="/skills"><li><p>skills</p></li></Link>
+      <Link to="/portfolio"><li><p>portfolio</p></li></Link>
     </ul>
   )
 }

@@ -1,6 +1,33 @@
 @import "../reset.css";
-div {
-  color: red;
+#root .nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: #222831;
+}
+#root .nav a {
+  padding: 30px 20px;
+  background-color: #222831;
+}
+#root .nav a:first-child:hover {
+  background-color: #222831;
+}
+#root .nav a:hover {
+  background-color: #393E46;
+}
+#root .nav a:active {
+  opacity: 0.5;
+}
+#root .nav a li img {
+  height: 30px;
+}
+#root .nav a li p {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  font-size: larger;
+  font-weight: 600;
+  color: #00ADB5;
 }
 
 /*# sourceMappingURL=index.css.map */

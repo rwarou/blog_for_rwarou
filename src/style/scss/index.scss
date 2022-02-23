@@ -1,7 +1,51 @@
 @import "../reset.css";
 
-$red-color: red;
+$black: #222831;
+$light-black: #393E46;
+$mint: #00ADB5;
+$white: #EEEEEE;
 
-div {
-  color: $red-color;
+#root {
+
+  .nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: $black;
+
+    a {
+      padding: 30px 20px;
+      background-color: $black;
+      
+      &:first-child {
+        &:hover {
+          background-color: $black;
+        }
+      }
+
+      &:hover {
+        background-color: $light-black;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
+      
+      li {
+
+        img {
+          height: 30px;
+        }
+
+        p {
+          display: flex;
+          align-items: center;
+          height: 30px;
+          font-size: larger;
+          font-weight: 600;
+          color: $mint;
+        }
+      }
+  }
+  }
 }
