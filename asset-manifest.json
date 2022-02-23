@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/blog_for_rwarou/static/css/main.e6c13ad2.css",
+    "main.js": "/blog_for_rwarou/static/js/main.3bb4542b.js",
+    "index.html": "/blog_for_rwarou/index.html",
+    "main.e6c13ad2.css.map": "/blog_for_rwarou/static/css/main.e6c13ad2.css.map",
+    "main.3bb4542b.js.map": "/blog_for_rwarou/static/js/main.3bb4542b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.3bb4542b.js"
+  ]
+}
