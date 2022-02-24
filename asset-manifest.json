@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/blog_for_rwarou/static/css/main.83f20fd8.css",
-    "main.js": "/blog_for_rwarou/static/js/main.3d344a32.js",
+    "main.css": "/blog_for_rwarou/static/css/main.ccf2cd49.css",
+    "main.js": "/blog_for_rwarou/static/js/main.75c453c4.js",
     "static/media/dentalboda-app-flow.pdf": "/blog_for_rwarou/static/media/dentalboda-app-flow.9a401c0e2ba46089aa1f.pdf",
     "static/media/logo.png": "/blog_for_rwarou/static/media/logo.d2a1c816b8b5475b4887.png",
     "index.html": "/blog_for_rwarou/index.html",
-    "main.83f20fd8.css.map": "/blog_for_rwarou/static/css/main.83f20fd8.css.map",
-    "main.3d344a32.js.map": "/blog_for_rwarou/static/js/main.3d344a32.js.map"
+    "main.ccf2cd49.css.map": "/blog_for_rwarou/static/css/main.ccf2cd49.css.map",
+    "main.75c453c4.js.map": "/blog_for_rwarou/static/js/main.75c453c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.83f20fd8.css",
-    "static/js/main.3d344a32.js"
+    "static/css/main.ccf2cd49.css",
+    "static/js/main.75c453c4.js"
   ]
 }
