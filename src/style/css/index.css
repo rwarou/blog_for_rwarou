@@ -44,9 +44,26 @@
 #root .pdf-wrap .pdf-item-controller {
   padding: 10px;
 }
-#root .img-wrap img {
+#root .skill-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+#root .skill-wrap .skill-item {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 300px;
+  margin: 10px;
+}
+#root .skill-wrap .skill-item img {
   width: 150px;
-  padding: 10px;
+}
+#root .skill-wrap .skill-item p {
+  padding: 5px 0 0;
+}
+#root .skill-wrap .skill-item ul li {
+  padding: 5px 0 0;
 }
 
 /*# sourceMappingURL=index.css.map */

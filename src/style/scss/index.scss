@@ -77,11 +77,40 @@ $white: #EEEEEE;
     }
   }
 
-  .img-wrap {
-    
-    img {
-      width: 150px;
-      padding: 10px;
+  .skill-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+
+    .skill-item {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      width: 300px;
+      margin: 10px;
+
+      img {
+        width: 150px;
+      }
+
+      p {
+        padding: 5px 0 0;
+      }
+
+      .skill-name {
+        
+      }
+
+      .skill-rate {
+        
+      }
+
+      ul {
+        
+        li {
+          padding: 5px 0 0;
+        }
+      }
     }
   }
 }
