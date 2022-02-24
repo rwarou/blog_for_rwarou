@@ -1,6 +1,7 @@
 import React from 'react'
+import { skills } from '../states'
 
-export function SkillWrap({ skills }) {
+export function SkillWrap() {
   return (
     <div className='skill-wrap'>
       {skills.map(function (skill) {

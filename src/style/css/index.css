@@ -90,12 +90,19 @@
 }
 .skill-wrap .skill-item img {
   width: 150px;
+  padding: 10px;
 }
 .skill-wrap .skill-item p {
   padding: 5px 0 0;
+  font-size: 18px;
+  font-color: #ddd;
+  font-weight: 500;
 }
 .skill-wrap .skill-item ul li {
   padding: 5px 0 0;
+  font-size: 18px;
+  font-color: #ddd;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=index.css.map */
