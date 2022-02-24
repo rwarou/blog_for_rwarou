@@ -6,7 +6,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 export function SinglePagePdfViewer({ file }) {
   const [pages, setPages] = useState(null)
   const [currentPage, setCurrentPage] = useState(1)
-  const [width, setWidth] = useState(window.innerWidth / 2);
+  const [width, setWidth] = useState(window.innerWidth > 500 ? window.innerWidth / 2 : window.innerWidth - 50);
 
   function documentLoadSuccess({ numPages }) {
     setPages(numPages)

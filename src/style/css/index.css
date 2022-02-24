@@ -5,7 +5,16 @@
   z-index: 1;
   display: flex;
   flex-flow: row nowrap;
+  overflow: auto;
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
   background-color: #222831;
+}
+#root .nav::-webkit-scrollbar {
+  display: none;
+  /* for Chrome, Safari, and Opera */
 }
 #root .nav a {
   padding: 30px 20px;
