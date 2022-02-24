@@ -9,7 +9,7 @@ export function intervalTime(bigger, smaller) {
   return Math.floor(interval / (1000 * 60 * 60 * 24));
 }
 
-export function convertDate(date) {
+export function millisecondToDate(date) {
   let year = 0;
   let yearRemain = 0;
   let month = 0;
@@ -31,4 +31,20 @@ export function convertDate(date) {
     (`${month ? (month + '월 ') : ''}`) +
     (`${monthRemain ? (monthRemain + '일') : ''} `)
   )
+}
+
+export function convertDateText(date) {
+  const beforeDate = new Date(date)
+  const year = beforeDate.getFullYear()
+  const month = beforeDate.getMonth() + 1
+  const day = beforeDate.getDate()
+  return `${year}년 ${month}월 ${day}일`
+}
+
+export function convertDateDot(date) {
+  const beforeDate = new Date(date)
+  const year = beforeDate.getFullYear()
+  const month = beforeDate.getMonth() + 1
+  const day = beforeDate.getDate()
+  return `${year}.${month}.${day}`
 }

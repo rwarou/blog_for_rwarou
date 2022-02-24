@@ -111,5 +111,13 @@ export const careers = [
     company: "포씨게이트",
     careerStart: "2021-1-25",
     careerEnd: "2021-12-31",
+    mainTask: "모바일 앱 개발",
   },
+  {
+    id: 2,
+    company: "레버티",
+    careerStart: "2022-1-3",
+    careerEnd: null,
+    mainTask: "병원의 환자용 앱 및 의료진용 웹과 앱 신규 개발 및 유지보수",
+  }
 ];
