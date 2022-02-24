@@ -81,4 +81,28 @@
       }
     }
   }
+
+  @media screen and (max-width: 500px) {
+    .career-item {
+      width: 350px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .career-item {
+      width: 300px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .career-item {
+      width: 250px;
+    }
+  }
+
+  @media screen and (max-width: $mobile-size) {
+    .career-item {
+      width: 200px;
+    }
+  }
 }

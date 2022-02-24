@@ -94,14 +94,17 @@
 }
 .skill-wrap .skill-item p {
   padding: 5px 0 0;
+  color: #222;
   font-size: 18px;
-  font-color: #ddd;
   font-weight: 500;
+}
+.skill-wrap .skill-item ul {
+  width: 100%;
 }
 .skill-wrap .skill-item ul li {
   padding: 5px 0 0;
+  color: #222;
   font-size: 18px;
-  font-color: #ddd;
   font-weight: 500;
 }
 
@@ -164,6 +167,26 @@
   margin-left: 10px;
   font-size: 18px;
   font-weight: 500;
+}
+@media screen and (max-width: 500px) {
+  .career-wrap .career-item {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .career-wrap .career-item {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .career-wrap .career-item {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 335px) {
+  .career-wrap .career-item {
+    width: 200px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,7 +1,6 @@
 @mixin textStyle {
   font: {
     size: 18px;
-    color: #ddd;
     weight: 500;
   }
 }
@@ -26,13 +25,16 @@
 
     p {
       padding: 5px 0 0;
+      color: #222;
       @include textStyle
     }
 
     ul {
+      width: 100%;
       
       li {
         padding: 5px 0 0;
+        color: #222;
         @include textStyle
       }
     }
