@@ -27,10 +27,11 @@ export function SinglePagePdfViewer({ file }) {
       <Document
         file={file}
         options={{ workerSrc: "/pdf.worker.js" }}
+        loading={() => { }}
         onLoadSuccess={documentLoadSuccess}>
         <Page width={width} pageNumber={currentPage} />
       </Document>
-      <p className='pdf-item-controller'>
+      {pages && <p className='pdf-item-controller'>
         <MdArrowBackIos
           className="arrow"
           size="32"
@@ -42,7 +43,7 @@ export function SinglePagePdfViewer({ file }) {
           size="32"
           onClick={next}
         />
-      </p>
+      </p>}
     </div >
   )
 }
