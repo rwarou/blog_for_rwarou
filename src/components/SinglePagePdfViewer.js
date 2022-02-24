@@ -7,6 +7,11 @@ export function SinglePagePdfViewer({ file }) {
   const [pages, setPages] = useState(null)
   const [currentPage, setCurrentPage] = useState(1)
 
+  const windowHeight = window.screen.height
+  const windowWidth = window.screen.width
+  const height = windowHeight > 450 ? windowHeight / 3 : windowHeight - 50
+  const width = windowWidth > 450 ? windowWidth / 3 : windowWidth - 50
+
   function documentLoadSuccess({ numPages }) {
     setPages(numPages)
   }
@@ -17,7 +22,7 @@ export function SinglePagePdfViewer({ file }) {
         file={file}
         options={{ workerSrc: "/pdf.worker.js" }}
         onLoadSuccess={documentLoadSuccess}>
-        <Page scale={0.5} pageNumber={currentPage} />
+        <Page width={width} height={height} pageNumber={currentPage} />
       </Document>
       <p className='pdf-item-controller'>
         <span onClick={() => currentPage > 1 ? setCurrentPage(currentPage - 1) : null}>
