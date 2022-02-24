@@ -6,15 +6,17 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 export function SinglePagePdfViewer({ file }) {
   const [pages, setPages] = useState(null)
   const [currentPage, setCurrentPage] = useState(1)
-
-  const windowHeight = window.screen.height
-  const windowWidth = window.screen.width
-  const height = windowHeight > 450 ? windowHeight / 3 : windowHeight - 50
-  const width = windowWidth > 450 ? windowWidth / 3 : windowWidth - 50
+  const [width, setWidth] = useState(window.innerWidth / 2);
 
   function documentLoadSuccess({ numPages }) {
     setPages(numPages)
   }
+
+  window.addEventListener('resize', function () {
+    const windowWidth = window.innerWidth
+    const w = windowWidth > 500 ? windowWidth / 2 : windowWidth - 50
+    setWidth(w)
+  })
 
   return (
     <div className='pdf-item'>
@@ -22,7 +24,7 @@ export function SinglePagePdfViewer({ file }) {
         file={file}
         options={{ workerSrc: "/pdf.worker.js" }}
         onLoadSuccess={documentLoadSuccess}>
-        <Page width={width} height={height} pageNumber={currentPage} />
+        <Page width={width} pageNumber={currentPage} />
       </Document>
       <p className='pdf-item-controller'>
         <span onClick={() => currentPage > 1 ? setCurrentPage(currentPage - 1) : null}>
