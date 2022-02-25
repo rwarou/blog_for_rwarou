@@ -48,12 +48,21 @@
     }
 
     .career-content {
-
-      &-task {
+      @mixin careerContentWrap {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
         margin-bottom: 10px;
+      }
+
+      @mixin secondContentWrap {
+        width: 100%;
+        padding: 5px 0 5px 5px;
+        margin-left: 10px;
+      }
+
+      &-task {
+        @include careerContentWrap;
   
         div {
   
@@ -73,12 +82,44 @@
           }
   
           &:last-child {
-            width: 100%;
-            padding: 5px 0 5px 5px;
-            margin-left: 10px;
+            @include secondContentWrap;
             font: {
               size: 18px;
               weight: 500;
+            }
+          }
+        }
+      }
+
+      &-projects {
+        @include careerContentWrap;
+
+        &-title {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100px;
+          height: 20px;
+          padding: 5px;
+          border-radius: 15px;
+          background-color: #efefef;
+          font: {
+            size: 16px;
+            weight: 500;
+          }
+        }
+
+        &-content {
+          @include secondContentWrap;
+
+          .project-wrap {
+            margin: 10px 0;
+            padding: 10px 15px;
+            border-radius: 15px;
+            background-color: #efefef;
+
+            &:first-child {
+              margin: 0;
             }
           }
         }

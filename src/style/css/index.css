@@ -169,6 +169,38 @@
   font-size: 18px;
   font-weight: 500;
 }
+.career-wrap .career-item .career-content-projects {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.career-wrap .career-item .career-content-projects-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: #efefef;
+  font-size: 16px;
+  font-weight: 500;
+}
+.career-wrap .career-item .career-content-projects-content {
+  width: 100%;
+  padding: 5px 0 5px 5px;
+  margin-left: 10px;
+}
+.career-wrap .career-item .career-content-projects-content .project-wrap {
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 15px;
+  background-color: #efefef;
+}
+.career-wrap .career-item .career-content-projects-content .project-wrap:first-child {
+  margin: 0;
+}
 @media screen and (max-width: 500px) {
   .career-wrap .career-item {
     width: 350px;

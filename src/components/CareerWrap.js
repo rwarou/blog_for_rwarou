@@ -23,14 +23,26 @@ export function CareerWrap() {
               <div>담당업무</div>
               <div>{career.mainTask}</div>
             </div>
-            <div className='career-content'>
-              <div>프로젝트</div>
-              <div>asdfasdfasdf</div>
-              {/* {career.projects.map(function (project) {
-                return (
-                  <div>{project.name}</div>
-                )
-              })} */}
+            <div className='career-content-projects'>
+              <p className='career-content-projects-title'>프로젝트</p>
+              <div className='career-content-projects-content'>
+                {career.projects.map(function (project) {
+                  return (
+                    <div key={project.id} className='project-wrap'>
+                      <p>{project.name}</p>
+                      <p>{project.projectStart} - {project.projectEnd}</p>
+                      <ul>
+                        {project.descriptions.map(function (description) {
+                          return (
+                            <li key={description}>{description}</li>
+                          )
+                        })}
+                      </ul>
+                      <p>{project.usedSkills.join(', ')}</p>
+                    </div>
+                  )
+                })}
+              </div>
             </div>
           </div>
         )
