@@ -1,6 +1,6 @@
 import React from 'react'
 import { startCareer } from '../constants'
-import { intervalTime, millisecondToDate, convertDateDot } from '../utils'
+import { intervalTime, millisecondToDate, convertDateDot, convertDateDotExceptDay } from '../utils'
 import { careers } from '../states'
 
 export function CareerWrap() {
@@ -30,7 +30,7 @@ export function CareerWrap() {
                   return (
                     <div key={project.id} className='project-wrap'>
                       <p>{project.name}</p>
-                      <p>{project.projectStart} - {project.projectEnd}</p>
+                      <p>{convertDateDotExceptDay(project.projectStart)} - {convertDateDotExceptDay(project.projectEnd)}</p>
                       <ul>
                         {project.descriptions.map(function (description) {
                           return (

@@ -44,7 +44,17 @@ export function convertDateText(date) {
 export function convertDateDot(date) {
   const beforeDate = new Date(date)
   const year = beforeDate.getFullYear()
-  const month = beforeDate.getMonth() + 1
-  const day = beforeDate.getDate()
+  const m = beforeDate.getMonth() + 1
+  const month = m < 10 ? `0${m}` : m
+  const d = beforeDate.getDate()
+  const day = d < 10 ? `0${d}` : d
   return `${year}.${month}.${day}`
+}
+
+export function convertDateDotExceptDay(date) {
+  const beforeDate = new Date(date)
+  const year = beforeDate.getFullYear()
+  const m = beforeDate.getMonth() + 1
+  const month = m < 10 ? `0${m}` : m
+  return `${year}.${month}`
 }

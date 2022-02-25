@@ -7,8 +7,6 @@ export function Portfolio() {
     <div className='wrap'>
       <div className='pdf-wrap'>
         <SinglePagePdfViewer file={dentalbodaAppFlow} />
-        <SinglePagePdfViewer file={dentalbodaAppFlow} />
-        <SinglePagePdfViewer file={dentalbodaAppFlow} />
       </div>
     </div>
   )
