@@ -3,7 +3,7 @@ import { Skills, Portfolio, Career } from '../'
 
 export function Home() {
   return (
-    <div>
+    <div className='home-wrap'>
       <Career />
       <div style={{ padding: 50 }}><hr /></div>
       <Skills />

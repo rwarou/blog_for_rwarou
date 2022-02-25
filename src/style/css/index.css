@@ -189,4 +189,22 @@
   }
 }
 
+#root {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+#root .wrap {
+  align-self: center;
+  max-width: 1080px;
+}
+#root .home-wrap {
+  display: flex;
+  flex-flow: column nowrap;
+}
+#root .home-wrap .wrap {
+  align-self: center;
+  max-width: 1080px;
+}
+
 /*# sourceMappingURL=index.css.map */

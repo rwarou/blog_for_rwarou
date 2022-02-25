@@ -1,2 +1,26 @@
 @import "../reset.css";
 @import "./_constant", "./_nav", "./_pdf", "./skills", "./career";
+
+@mixin wrap-css {
+  align-self: center;
+  max-width: 1080px;
+}
+
+#root {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+
+  .wrap {
+    @include wrap-css
+  }
+
+  .home-wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    
+    .wrap {
+      @include wrap-css
+    }
+  }
+}

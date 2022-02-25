@@ -4,10 +4,12 @@ import dentalbodaAppFlow from '../../assets/files/dentalboda-app-flow.pdf'
 
 export function Portfolio() {
   return (
-    <div className='pdf-wrap'>
-      <SinglePagePdfViewer file={dentalbodaAppFlow} />
-      <SinglePagePdfViewer file={dentalbodaAppFlow} />
-      <SinglePagePdfViewer file={dentalbodaAppFlow} />
+    <div className='wrap'>
+      <div className='pdf-wrap'>
+        <SinglePagePdfViewer file={dentalbodaAppFlow} />
+        <SinglePagePdfViewer file={dentalbodaAppFlow} />
+        <SinglePagePdfViewer file={dentalbodaAppFlow} />
+      </div>
     </div>
   )
 }

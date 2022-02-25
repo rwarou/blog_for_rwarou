@@ -2,5 +2,9 @@ import React from 'react'
 import { SkillWrap } from '../../components';
 
 export function Skills() {
-  return <SkillWrap />
+  return (
+    <div className='wrap'>
+      <SkillWrap />
+    </div>
+  )
 }
