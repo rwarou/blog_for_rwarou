@@ -19,9 +19,18 @@ export function CareerWrap() {
               <div>{career.company}</div>
               <div>{convertDateDot(career.careerStart)} - {career.careerEnd ? convertDateDot(career.careerEnd) : "재직중"}</div>
             </div>
-            <div className='career-content'>
-              <div>주요 업무</div>
+            <div className='career-content-task'>
+              <div>담당업무</div>
               <div>{career.mainTask}</div>
+            </div>
+            <div className='career-content'>
+              <div>프로젝트</div>
+              <div>asdfasdfasdf</div>
+              {/* {career.projects.map(function (project) {
+                return (
+                  <div>{project.name}</div>
+                )
+              })} */}
             </div>
           </div>
         )

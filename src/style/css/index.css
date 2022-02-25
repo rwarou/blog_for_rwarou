@@ -144,12 +144,13 @@
   font-size: 14px;
   color: #888;
 }
-.career-wrap .career-item .career-content {
+.career-wrap .career-item .career-content-task {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
-.career-wrap .career-item .career-content div:first-child {
+.career-wrap .career-item .career-content-task div:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,7 +162,7 @@
   font-size: 16px;
   font-weight: 500;
 }
-.career-wrap .career-item .career-content div:last-child {
+.career-wrap .career-item .career-content-task div:last-child {
   width: 100%;
   padding: 5px 0 5px 5px;
   margin-left: 10px;

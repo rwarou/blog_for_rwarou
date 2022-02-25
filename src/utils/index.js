@@ -29,7 +29,7 @@ export function millisecondToDate(date) {
   return (
     (`${year ? (year + '년 ') : ''}`) +
     (`${month ? (month + '월 ') : ''}`) +
-    (`${monthRemain ? (monthRemain + '일') : ''} `)
+    (`${monthRemain ? (Math.round(monthRemain) + '일') : ''} `)
   )
 }
 

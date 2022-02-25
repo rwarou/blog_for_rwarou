@@ -48,34 +48,38 @@
     }
 
     .career-content {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
 
-      div {
-
-        &:first-child {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 100px;
-          height: 20px;
-          padding: 5px;
-          border-radius: 15px;
-          background-color: #efefef;
-          font: {
-            size: 16px;
-            weight: 500;
+      &-task {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-bottom: 10px;
+  
+        div {
+  
+          &:first-child {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 20px;
+            padding: 5px;
+            border-radius: 15px;
+            background-color: #efefef;
+            font: {
+              size: 16px;
+              weight: 500;
+            }
           }
-        }
-
-        &:last-child {
-          width: 100%;
-          padding: 5px 0 5px 5px;
-          margin-left: 10px;
-          font: {
-            size: 18px;
-            weight: 500;
+  
+          &:last-child {
+            width: 100%;
+            padding: 5px 0 5px 5px;
+            margin-left: 10px;
+            font: {
+              size: 18px;
+              weight: 500;
+            }
           }
         }
       }
