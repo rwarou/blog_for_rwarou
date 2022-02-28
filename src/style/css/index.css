@@ -116,7 +116,8 @@
   padding-top: 30px;
 }
 .career-wrap .career-total {
-  padding: 10px 10px 10px 20px;
+  text-align: right;
+  padding: 10px 20px 10px 10px;
   font-size: 16px;
   font-weight: 400;
 }
@@ -200,6 +201,12 @@
 .career-wrap .career-item .career-content-projects-content .project-wrap:first-child {
   margin: 0;
 }
+.career-wrap .career-item .career-content-projects-content .project-wrap p {
+  padding: 2.5px 0;
+}
+.career-wrap .career-item .career-content-projects-content .project-wrap ul {
+  padding: 2.5px 0;
+}
 @media screen and (max-width: 500px) {
   .career-wrap .career-item {
     width: 350px;
@@ -219,6 +226,10 @@
   .career-wrap .career-item {
     width: 200px;
   }
+}
+
+a {
+  cursor: default;
 }
 
 #root {

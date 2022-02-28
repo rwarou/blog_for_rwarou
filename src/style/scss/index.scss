@@ -6,6 +6,10 @@
   max-width: 1080px;
 }
 
+a {
+  cursor: default;
+}
+
 #root {
   display: flex;
   flex-flow: column nowrap;
