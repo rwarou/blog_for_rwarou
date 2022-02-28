@@ -1,5 +1,5 @@
 import React from 'react'
-import { CareerWrap } from '../../components'
+import { CareerWrap } from './items/CareerWrap'
 
 export function Career() {
   return (
