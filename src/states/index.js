@@ -250,3 +250,11 @@ export const careers = [
     ],
   }
 ];
+
+export const toyProjects = [
+  {
+    id: 1,
+    name: "",
+
+  },
+]

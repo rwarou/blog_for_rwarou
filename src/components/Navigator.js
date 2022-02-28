@@ -9,6 +9,7 @@ export function Navigator() {
       <Link to="/career"><li><p>career</p></li></Link>
       <Link to="/skills"><li><p>skills</p></li></Link>
       <Link to="/portfolio"><li><p>portfolio</p></li></Link>
+      <Link to="/toyProjects"><li><p>toyProjects</p></li></Link>
     </ul>
   )
 }
